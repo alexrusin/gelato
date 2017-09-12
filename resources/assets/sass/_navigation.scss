@@ -1,0 +1,16 @@
+.navbar-brand {
+	display: none;
+	@media screen and (max-width: $break-medium) {
+    display: inline;
+  }
+}
+
+.navbar-nav{
+	font-size: 1.5em;
+	@media (min-width: $break-medium){ 
+        float:none;
+        margin: 0 auto;
+        display: table;
+        table-layout: fixed;
+    }
+}

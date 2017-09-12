@@ -1,0 +1,44 @@
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    margin-top:20px;
+    text-align: center;
+    padding: 10px;
+    .chapter-name {
+    	margin-top: 20px;
+    }
+    .img {
+    	
+    	border: 1px solid gray;
+    }
+
+     &:hover {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+}
+
+.chapters-list {
+	a:hover {
+		text-decoration: none;
+	}
+}
+
+.chapter {
+    color: grey;
+    font-size: 1.3em;
+}
+
+.card-image {
+	padding: 10px;
+}
+
+.chapter-info {
+	img {
+		float: left; margin: 0px 15px 15px 0px;
+	}
+
+	p {
+		font-size: 1.2em;
+	}
+}
