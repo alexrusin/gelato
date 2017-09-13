@@ -1,29 +1,45 @@
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;
-    margin: auto;
-    margin-top:20px;
-    text-align: center;
-    padding: 10px;
-    .character-name {
-    	margin-top: 20px;
-    }
-    .img {
-    	
-    	border: 1px solid gray;
-    }
+.cards-list {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
 
-    &:hover {
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        max-width: 300px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:20px;
+        text-align: center;
+        padding: 10px;
+
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+       
+        .character-name {
+        	margin-top: 20px;
+        }
+        .img {
+        	
+        	border: 1px solid gray;
+        }
+
+        &:hover {
+           -webkit-box-shadow: 3px 4px 5px 6px rgba(0,0,0,0.2);
+            -moz-box-shadow: 3px 4px 5px 6px rgba(0,0,0,0.2);
+            box-shadow: 3px 4px 5px 6px rgba(0,0,0,0.2);
+        }
+
+        a:hover {
+        text-decoration: none;
+        }
     }
 }
 
-
-.characters-list {
-	a:hover {
-		text-decoration: none;
-	}
-}
 
 .tag-line {
     color: grey;

@@ -7,10 +7,16 @@ class ChapterTableSeeder extends Seeder
 {
 	private $chapters = [
 		'Life Is Bittersweet',
-		'Rumbunctious Ruffians',
+		'Rambunctious Ruffians',
 		'Feral The Friendly Companion',
 		'Lessons In Life',
-		'Obedience Makes The Heart Fonder'
+		'Obedience Makes The Heart Fonder',
+		'The Circus Has Come To Town',
+		'The Tears Of A Clown',
+		'A Wise Old Elephant',
+		'A Sweet Treat For Giovanni',
+        'Fancy Hat for Cupcake',
+        'Introducing Gelato the Clown'
 	];
     /**
      * Run the database seeds.

@@ -8373,30 +8373,50 @@ button.close {
   }
 }
 
-.card {
+footer {
+  height: 5em;
+}
+
+footer .col-md-12 {
+  margin-top: 2em;
+}
+
+.cards-list {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.cards-list .card {
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 300px;
-  margin: auto;
+  margin-right: auto;
+  margin-left: auto;
   margin-top: 20px;
   text-align: center;
   padding: 10px;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
 }
 
-.card .character-name {
+.cards-list .card .character-name {
   margin-top: 20px;
 }
 
-.card .img {
+.cards-list .card .img {
   border: 1px solid gray;
 }
 
-.card:hover {
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
+.cards-list .card:hover {
+  -webkit-box-shadow: 3px 4px 5px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 3px 4px 5px 6px rgba(0, 0, 0, 0.2);
 }
 
-.characters-list a:hover {
+.cards-list .card a:hover {
   text-decoration: none;
 }
 
@@ -8416,42 +8436,6 @@ button.close {
 
 .character-info p {
   font-size: 1.2em;
-}
-
-.card {
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  margin: auto;
-  margin-top: 20px;
-  text-align: center;
-  padding: 10px;
-}
-
-.card .chapter-name {
-  margin-top: 20px;
-}
-
-.card .img {
-  border: 1px solid gray;
-}
-
-.card:hover {
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.chapters-list a:hover {
-  text-decoration: none;
-}
-
-.chapter {
-  color: grey;
-  font-size: 1.3em;
-}
-
-.card-image {
-  padding: 10px;
 }
 
 .chapter-info img {

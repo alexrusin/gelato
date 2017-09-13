@@ -65,7 +65,16 @@
 
         @yield('content')
     </div>
-
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    &copy; {{\Carbon\Carbon::now()->format('Y')}} Gelato The Clown.
+                </div>
+            </div>
+           
+        </div>
+    </footer>
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
     @stack('scripts')
