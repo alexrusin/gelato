@@ -5,7 +5,7 @@ use Illuminate\Database\Seeder;
 class DatabaseSeeder extends Seeder
 {
 
-	private $tableNames = ['characters', 'chapters'];
+	private $tableNames = ['characters', 'chapters', 'products', 'variants', 'attributes', 'attribute_values'];
     /**
      * Run the database seeds.
      *
@@ -16,6 +16,7 @@ class DatabaseSeeder extends Seeder
     	$this->cleanTables();
         $this->call(CharacterTableSeeder::class);
         $this->call(ChapterTableSeeder::class);
+        $this->call(ProductTableSeeder::class);
     }
 
     private function cleanTables()

@@ -8403,10 +8403,6 @@ footer .col-md-12 {
   display: flex;
 }
 
-.cards-list .card .character-name {
-  margin-top: 20px;
-}
-
 .cards-list .card .img {
   border: 1px solid gray;
 }
@@ -8418,6 +8414,10 @@ footer .col-md-12 {
 
 .cards-list .card a:hover {
   text-decoration: none;
+}
+
+.card .character-name {
+  margin-top: 20px;
 }
 
 .tag-line {

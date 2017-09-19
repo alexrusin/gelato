@@ -1,5 +1,6 @@
 <?php
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -23,3 +24,5 @@ Route::get('/chapters/{chapter}', 'ChaptersController@show')->name('single-chapt
 Route::get('/mobile-app', 'MobileAppController@index')->name('mobile-app');
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/store', 'StoreController@index')->name('store');
