@@ -23,3 +23,12 @@ Route::get('/chapters/{chapter}', 'ChaptersController@show')->name('single-chapt
 Route::get('/mobile-app', 'MobileAppController@index')->name('mobile-app');
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/store/products', 'StoreController@index')->name('store');
+Route::get('/store/product/{product}', 'StoreController@show')->name('product');
+
+Route::post('/shopping-cart/add', 'ShoppingCartController@add')->name('add-shopping-cart');
+
+Route::get('/shopping-cart/view', 'ShoppingCartController@view')->name('cart');
+
+Route::get('/api/cart/delete', 'ShoppingCartController@delete');
