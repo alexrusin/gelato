@@ -9,7 +9,7 @@ use Illuminate\Database\Seeder;
 class ProductTableSeeder extends Seeder
 {
 
-	protected $sizes = ['S', 'M', 'L', 'XL', '2XL'];
+	protected $sizes = ['Small', 'Medium', 'Large', 'XLarge', '2XLarge'];
 	protected $colors = ['red', 'white', 'blue'];
     /**
      * Run the database seeds.

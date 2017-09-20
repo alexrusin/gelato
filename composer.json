@@ -9,8 +9,10 @@
         "barryvdh/laravel-debugbar": "^2.3",
         "doctrine/dbal": "^2.5",
         "fideloper/proxy": "~3.3",
+        "gloudemans/shoppingcart": "^2.4",
         "laravel/framework": "5.5.*",
-        "laravel/tinker": "~1.0"
+        "laravel/tinker": "~1.0",
+        "laravelcollective/html": "^5.5"
     },
     "require-dev": {
         "filp/whoops": "~2.0",

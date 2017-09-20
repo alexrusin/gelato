@@ -59,6 +59,7 @@
                             <li><a href="{{route('chapters')}}">Chapters</a></li>
                             <li><a href="{{route('mobile-app')}}">Mobile App</a></li>
                             <li><a href="{{route('store')}}">Store</a></li>
+                            <li><a href="{{route('cart')}}">Cart</a></li>
                     </ul>
                 </div>
             </div>
@@ -70,7 +71,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    &copy; {{\Carbon\Carbon::now()->format('Y')}} Gelato The Clown.
+                    &copy; {{\Carbon\Carbon::now()->format('Y')}} Gelato The Clown. All rights reserved.
                 </div>
             </div>
            

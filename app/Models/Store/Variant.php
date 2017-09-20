@@ -3,9 +3,10 @@
 namespace App\Models\Store;
 
 use App\Models\Store\Product;
+use Gloudemans\Shoppingcart\Contracts\Buyable;
 use Illuminate\Database\Eloquent\Model;
 
-class Variant extends Model
+class Variant extends Model implements Buyable
 {
    	protected $fillable = [
    		'id',
@@ -23,4 +24,19 @@ class Variant extends Model
    	{
    		return $this->belongsTo(Product::class);
    	}
+
+      public function getBuyableIdentifier($options = null)
+      {
+        return $this->id;
+      }
+
+      public function getBuyableDescription($options = null)
+      {
+         return $this->title;
+      }
+
+      public function getBuyablePrice($options = null) 
+      {
+         return $this->price;
+      }
 }
