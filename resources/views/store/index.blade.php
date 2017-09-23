@@ -1,6 +1,7 @@
 @extends('layouts.gelato-app')
 
 @section('content')
+<a href="{{route('cart')}}"><div class="shoppingCart"></div></a>
 <div class="container">
     <div class="row">
         <div class="col-md-12 text-center">

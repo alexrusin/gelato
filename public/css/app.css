@@ -7730,6 +7730,22 @@ body {
   z-index: -9;
 }
 
+.shoppingCart {
+  background: transparent url(../images/shoppingCartBg.png) no-repeat;
+  z-index: 3;
+  top: 5em;
+  position: absolute;
+  right: 0px;
+  margin: 30px 0px;
+  width: 130px;
+  height: 107px;
+  display: block;
+}
+
+.containerShoppingCart {
+  min-height: 250px;
+}
+
 .navbar-default {
   background-color: #990202;
   border-top: 1px solid #d3e0e9;

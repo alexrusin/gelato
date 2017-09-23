@@ -1,7 +1,7 @@
 @extends('layouts.gelato-app')
 
 @section('content')
-<div class="container">
+<div class="container containerShoppingCart">
 	<div class="row">
         <div class="col-md-12">
         	@include('layouts.alertmsg')
