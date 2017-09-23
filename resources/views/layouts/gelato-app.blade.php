@@ -21,7 +21,7 @@
             <div class="row">
                 <div class="col-md-12">
                    <a href="{{ url('/') }}">
-                   <img src="{{url('images/GelatoLogo.gif')}}" alt="Tent Image" class="img-responsive center-block"></a>
+                   <img src="{{url('images/headerTent2.png')}}" alt="Tent Image" class="img-responsive center-block"></a>
                 </div>
             </div>
         </div>

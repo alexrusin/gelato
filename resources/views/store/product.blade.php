@@ -37,7 +37,7 @@
 		    </div>
 		    <div class="row">
 		    	<div class="col-md-6">
-		    		<button class="btn btn-primary btn-lg" id="addToCart"><i class="glyphicon glyphicon-shopping-cart"></i> ADD TO CART</button>
+		    		<button class="btn btn-primary btn-lg" id="addToCart"></i> ADD TO CART</button>
 		    	</div>
 		    </div>
 		    {!!Form::close()!!}
