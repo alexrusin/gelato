@@ -57,8 +57,8 @@
                             <li><a href="{{url('/')}}">Home</a></li>
                             <li><a href="{{ route('characters') }}">Characters</a></li>
                             <li><a href="{{route('chapters')}}">Chapters</a></li>
-                            <li><a href="{{route('mobile-app')}}">Mobile App</a></li>
-                            <li><a href="{{route('store')}}">Store</a></li>
+                            <!-- <li><a href="{{route('mobile-app')}}">Mobile App</a></li>
+                            <li><a href="{{route('store')}}">Store</a></li> -->
                     </ul>
                 </div>
             </div>
