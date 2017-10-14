@@ -35,7 +35,7 @@
 			       		<tr id="$row->rowId">
 			       			<td>
 			       				@if($row->options->has('image_url'))
-			       					<img src="{{url($row->options->image_url)}}" alt="{{$row->name}}" class="img-responsive" width="50">
+			       					<img src="{{url('images/store/'. $row->options->image_url)}}" alt="{{$row->name}}" class="img-responsive" width="50">
 			       				@else
 									<img src="{{url('images/store/no-image.jpg')}}" alt="{{$row->name}}" class="img-responsive" width="50">
 			       				@endif
