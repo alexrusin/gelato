@@ -13,7 +13,7 @@
         @foreach ($products as $product)
             <div class="card">
                 <a href="{{route('product',['product' => $product->id])}}">
-                	<img src="{{url($product->image_url)}}" alt="{{$product->title}}" class="img-responsive center-block">
+                	<img src="{{url('images/store/' . $product->image_url)}}" alt="{{$product->title}}" class="img-responsive center-block">
                     <h4 class="chapter">{{$product->title}}</h4>
                     <button class="btn btn-primary">Shop Now</button>
                                       

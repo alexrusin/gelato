@@ -2,9 +2,10 @@
 
 namespace App\Models\Store;
  
-use Illuminate\Database\Eloquent\Model;
 use App\Models\Store\Attribute;
+use App\Models\Store\ProductImages;
 use App\Models\Store\Variant;
+use Illuminate\Database\Eloquent\Model;
 
 class Product extends Model
 {
@@ -23,5 +24,10 @@ class Product extends Model
     public function attributes()
     {
     	return $this->hasMany(Attribute::class);
+    }
+
+    public function productImages()
+    {
+        return $this->hasMany(ProductImages::class);
     }
 }

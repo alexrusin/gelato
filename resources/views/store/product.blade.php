@@ -10,10 +10,15 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-md-4">
-        	<img src="{{url($product->image_url)}}" alt="{{$product->title}}" class="img-responsive" width="350">
+        <div class="col-md-6">
+        	<div id="gallery">
+        		@foreach($product->productImages as $image)
+					<a class="image-not-selected" href="{{url('images/store/' . $image->image_url)}}"><img src="{{url('images/store/thumbs/' . $image->image_url)}}" width="70"  alt="{{$product->name}}"></a>
+        		@endforeach
+        	</div>
+        	<div id="photo"></div>
         </div>
-        <div class="col-md-7">
+        <div class="col-md-6">
         	<p class="h4">{{$product->description}}</p>
         	 <div class="row">
 		    	<div class="col-md-12">

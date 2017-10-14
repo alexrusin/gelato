@@ -3,6 +3,7 @@
 use App\Models\Store\Attribute;
 use App\Models\Store\AttributeValue;
 use App\Models\Store\Product;
+use App\Models\Store\ProductImages;
 use App\Models\Store\Variant;
 use Illuminate\Database\Seeder;
 
@@ -10,7 +11,13 @@ class ProductTableSeeder extends Seeder
 {
 
 	protected $sizes = ['Small', 'Medium', 'Large', 'XLarge', '2XLarge'];
-	protected $colors = ['red', 'white', 'blue'];
+	protected $urls = [
+		['tshirt-white-logo-front.jpg', 'tshirt-white-logo-back.jpg'], 
+		['tshirt-red.jpg'], 
+		['tshirt-white.jpg'],
+		['tshirt-blue.jpg']
+
+	];
     /**
      * Run the database seeds.
      *
@@ -18,10 +25,10 @@ class ProductTableSeeder extends Seeder
      */
     public function run()
     {
-    	foreach($this->colors as $color) {
+    	foreach($this->urls as $url) {
     		$product = factory(Product::class)->create(
 	       		[ 
-	       			'image_url' => 'images/store/tshirt-'.$color.'.jpg'
+	       			'image_url' => $url[0]
 	       		]
 	       	);
 
@@ -30,6 +37,13 @@ class ProductTableSeeder extends Seeder
 	        		'product_id' => $product->id
 	        	]
 	        );
+
+	        foreach ($url as $link) {
+	        	ProductImages::create([
+	        		'product_id' => $product->id,
+	        		'image_url' => $link
+	        	]);
+	        }
 
 	       foreach ($this->sizes as $size) {
 	 			$variant = factory(Variant::class)->create([
