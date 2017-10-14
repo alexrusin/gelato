@@ -11,7 +11,8 @@
         <div class="cards-list">
         @foreach ($chapters as $index => $chapter)
             <div class="card">
-                <a href="{{route('single-chapter', ['chapter'=>$chapter->id])}}">
+                <a>
+                <!-- <a href="{{route('single-chapter', ['chapter'=>$chapter->id])}}"> -->
                     <div class="chapter">Chapter {{($index+1)}}</div>
                     <h4 class="chapter-name">{{$chapter->title}}</h4>
                     <img src="{{url('images/'.$chapter->image_url)}}" alt="{{$chapter->title}}" class="img-responsive center-block">                  
