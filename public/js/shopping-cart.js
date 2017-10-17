@@ -13,3 +13,17 @@ $('.deleteButton').on('click', function(){
     	console.log(error);
   	});
 });
+
+$('#checkout').on('click', function(){
+	var appUrl = $(this).data('app-url');
+	axios.get('/api/order/create', {
+  	})
+  	.then(function (response) {
+  		console.log(response.data.orderId);
+  		console.log(window.location.protocol);
+    	window.location.href = window.location.protocol + '//' + appUrl+'/checkout/shipping-address/'+response.data.orderId;
+ 	})
+  	.catch(function (error) {
+    	console.log(error);
+  	});
+});

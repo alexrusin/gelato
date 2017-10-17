@@ -75,7 +75,7 @@
 			<div class="row">
 				<div class="col-md-4 col-md-offset-8">
 					<a href="{{route('store')}}" class="btn btn-success" style="margin-right: 20px;">Continue Shopping</a>
-					<a href="#" class="btn btn-primary">Checkout</a>
+					<button id="checkout" class="btn btn-primary" data-app-url="{{config('app.url')}}">Checkout</button>
 				</div>
 			</div>
 			@endif

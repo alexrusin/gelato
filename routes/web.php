@@ -1,5 +1,7 @@
 <?php
 
+strtoupper(substr(md5(microtime()), 0, 8));
+
 
 /*
 |--------------------------------------------------------------------------
@@ -33,3 +35,12 @@ Route::post('/shopping-cart/add', 'ShoppingCartController@add')->name('add-shopp
 Route::get('/shopping-cart/view', 'ShoppingCartController@view')->name('cart');
 
 Route::get('/api/cart/delete', 'ShoppingCartController@delete');
+
+Route::get('/api/order/create', 'OrderController@create');
+Route::post('/api/order/delete', 'OrderController@delete');
+
+Route::get('/checkout/shipping-address/{order}', 'CheckoutController@showShippingAddress')->name('checkout-address');
+Route::post('/checkout/shipping-address/{order}', 'CheckoutController@saveShippingAddress')->name('checkout-address');
+
+Route::get('/checkout/shipping-option/{order}', 'CheckoutController@showShippingOption')->name('checkout-option');
+Route::post('/checkout/shipping-option/{order}', 'CheckoutController@saveShippingOption')->name('checkout-option');

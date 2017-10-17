@@ -803,6 +803,8 @@ var app = new Vue({
   el: '#app'
 });
 
+__webpack_require__(45);
+
 /***/ }),
 /* 10 */
 /***/ (function(module, exports, __webpack_require__) {
@@ -41983,6 +41985,23 @@ if (false) {
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 41 */,
+/* 42 */,
+/* 43 */,
+/* 44 */,
+/* 45 */
+/***/ (function(module, exports) {
+
+$('#cancel-order').on('click', function (e) {
+
+	var orderId = $(this).data('order-id');
+
+	axios.post('/api/order/delete', {
+		orderId: orderId
+	}).then(function (response) {}).catch(function (error) {});
+});
 
 /***/ })
 /******/ ]);

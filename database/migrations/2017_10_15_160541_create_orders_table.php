@@ -16,9 +16,13 @@ class CreateOrdersTable extends Migration
         Schema::create('orders', function (Blueprint $table) {
             $table->increments('id');
             $table->string('order_number');
-            $table->string('customer_name');
-            $table->string('customer_email');
+            $table->string('customer_name')->nullable();
+            $table->string('customer_email')->nullable();
             $table->string('customer_phone')->nullable();
+            $table->decimal('order_subtotal', 10, 2)->nullable();
+            $table->decimal('order_total', 10, 2)->nullable();
+            $table->decimal('tax_amount', 10, 2)->nullable();
+            $table->decimal('shipping_amount', 10, 2)->nullable();
             $table->enum('status', ['pending', 'paid', 'canceled', 'fulfilled'])->default('pending');
             $table->string('tracking_number')->nullable();
             $table->date('shipping_date')->nullable();

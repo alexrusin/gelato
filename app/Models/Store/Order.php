@@ -11,7 +11,11 @@ class Order extends Model
     	'order_number',
     	'customer_name',
     	'customer_email',
-    	'customer_phone'
+    	'customer_phone',
+    	'order_total',
+        'order_subtotal',
+    	'tax_amount',
+    	'shipping_amount'
     ];
 
     protected $dates = [
